@@ -39,7 +39,7 @@ const Main = () => {
       <div className="main__left">
         <h4>Filters</h4>
         <p style={{ marginLeft: "50px" }}>Launch Year</p>
-        <Years />
+        <Years rockets={rockets} setRockets={setRockets} />
         <p style={{ marginLeft: "50px", marginTop: "10px" }}>
           Successful Launch
         </p>

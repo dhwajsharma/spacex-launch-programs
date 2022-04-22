@@ -10,6 +10,8 @@
   padding: 10px;
   border-radius: 10px;
   margin-left: 10px;
+  padding-bottom: 10px;
+  block-size: fit-content;
 }
 
 .tandf__items {
