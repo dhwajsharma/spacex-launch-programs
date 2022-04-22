@@ -1,0 +1,64 @@
+.rockets {
+  display: grid;
+  gap: 40px;
+  margin-left: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.rockets__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.rockets__img {
+  width: 100px;
+  height: 100px;
+  background: #f2f2f2;
+  padding: 20px;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+.rockets__mission_id {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.rockets__launch_year {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rockets__launch_success {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rockets__launch_landing {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 930px) {
+  .rockets {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .rockets {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

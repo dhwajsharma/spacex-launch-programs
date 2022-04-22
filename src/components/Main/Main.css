@@ -1,0 +1,35 @@
+.main {
+  display: flex;
+  margin-top: 10px;
+}
+
+.main__left {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.tandf__items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.tandf__item {
+  background: #c2e295;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    flex-direction: column;
+  }
+}
