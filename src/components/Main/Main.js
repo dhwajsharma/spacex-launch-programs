@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Main.css";
 import Years from "../Years/Years";
-import TandF from "../TandF/TandF";
 import Rockets from "../Rockets/Rockets";
 
 const Main = () => {
@@ -34,6 +33,14 @@ const Main = () => {
     setRockets(filteredLanding);
   };
 
+  const handleLandingFailure = () => {
+    // handle landing failure
+    const filteredLanding = rockets.filter(
+      (roc) => !roc.rocket.first_stage.cores[0].land_success
+    );
+    setRockets(filteredLanding);
+  };
+
   return (
     <div className="main">
       <div className="main__left">
@@ -58,7 +65,9 @@ const Main = () => {
           <div className="tandf__item" onClick={handleLanding}>
             True
           </div>
-          <div className="tandf__item">False</div>
+          <div className="tandf__item" onClick={handleLandingFailure}>
+            False
+          </div>
         </div>
       </div>
       <div className="main__right">
